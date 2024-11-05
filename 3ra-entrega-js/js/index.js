@@ -147,7 +147,12 @@ const vaciarCarrito = () => {
 
 comprarBtn.addEventListener('click', () => {
     vaciarCarrito();
-    alert('¡Gracias por su compra! Su carrito ha sido vaciado.');
+    Swal.fire({
+        title: '¡Gracias por su compra!',
+        text: 'Su carrito ha sido vaciado.',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+    });
 });
 
 
